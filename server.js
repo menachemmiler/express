@@ -1,9 +1,9 @@
 import express, { json } from 'express';
 const app = express();
-const PORT = 3000;
 import { Amn } from './Amn.js';
 import fs from 'fs/promises';
 import { v4 as uuidv4, v4 } from 'uuid';
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());//ממיר את כל המידע שעובר בגוף הבקשה ל-json
 
