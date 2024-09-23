@@ -1,11 +1,32 @@
 import express from 'express';
 const app = express();
-const PORT = 7000;
+const PORT = 3000;
+
+//req.params.id...
 
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-})
+
+
+
+app.get('/amn', (req, res) => {
+
+});
+
+app.get('/amn/:id', (req, res) => {
+
+});
+
+app.get('/amn/sum', (req, res) => {
+
+});
+
+app.post('/amn', (req, res) => {
+
+});
+
+app.patch('/amn/', (req, res) => {
+
+});
 
 
 app.listen(PORT, () => {
